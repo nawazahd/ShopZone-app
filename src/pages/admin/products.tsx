@@ -8,7 +8,7 @@ import AdminSidebar from "../../components/admin/AdminSidebar";
 import TableHOC from "../../components/admin/TableHOC";
 import { Skeleton } from "../../components/loader";
 import { useAllProductsQuery } from "../../redux/api/productAPI";
-import { RootState, server } from "../../redux/store";
+import { RootState,} from "../../redux/store";
 import { CustomError } from "../../types/api-types";
 
 interface DataType {
@@ -54,12 +54,12 @@ const Products = () => {
     toast.error(err.data.message);
   }
 
-  useEffect(() => {
+  useEffect(() => {//<img src={`/${photo}`} alt={name} />
     if (data)
       setRows(
         data.products.map((i) => ({
           // photo: <img src={`${server}/${i.photo}`} />,
-          photo: <img src={`./prod-images/${i.photo}`} />,
+          photo: <img src={`./src/assets/${i.photo}`} />,
           name: i.name,
           price: i.price,
           stock: i.stock,
