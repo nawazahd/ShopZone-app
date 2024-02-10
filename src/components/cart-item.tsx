@@ -20,7 +20,8 @@ const CartItem = ({
 
   return (
     <div className="cart-item">
-      <img src={`${server}/${photo}`} alt={name} />
+      {/* <img src={`${server}/${photo}`} alt={name} /> */}
+      <img src={`./prod-images/${photo}`} alt={name} />
       <article>
         <Link to={`/product/${productId}`}>{name}</Link>
         <span>₹{price}</span>
