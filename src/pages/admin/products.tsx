@@ -59,7 +59,7 @@ const Products = () => {
       setRows(
         data.products.map((i) => ({
           // photo: <img src={`${server}/${i.photo}`} />,
-          photo: <img src={`./src/assets/${i.photo}`} />,
+          photo: <img src={`https://raw.githubusercontent.com/nawazahd/ShopZone-app/master/src/assets/${i.photo}`} />,
           name: i.name,
           price: i.price,
           stock: i.stock,

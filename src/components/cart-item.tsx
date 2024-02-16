@@ -21,7 +21,7 @@ const CartItem = ({
   return (
     <div className="cart-item">
       {/* <img src={`${server}/${photo}`} alt={name} /> */}
-      <img src={`./src/assets/${photo}`} alt={name} />
+      <img src={`https://raw.githubusercontent.com/nawazahd/ShopZone-app/master/src/assets/${photo}`} alt={name} />
       <article>
         <Link to={`/product/${productId}`}>{name}</Link>
         <span>₹{price}</span>
