@@ -18,7 +18,7 @@ const ProductCard = ({
   stock,
   handler,
 }: ProductsProps) => {
- 
+
 
   return (
     <div className="product-card">
