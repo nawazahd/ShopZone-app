@@ -22,7 +22,7 @@ const ProductCard = ({
   return (
     <div className="product-card">
       {/* <img src={`${server}/${photo}`} alt={name} /> */}
-      <img src={`./src/assets/${photo}`} alt={name} />
+      <img src={`https://raw.githubusercontent.com/nawazahd/ShopZone-app/master/src/assets/uploads/${photo}`} alt={name} />
       <p>{name}</p>
       <span>₹{price}</span>
 
