@@ -19,6 +19,7 @@ const ProductCard = ({
   handler,
 }: ProductsProps) => {
   // Remove "uploads/" from photo string
+    console.log("Original photo:", photo); 
   const modifiedPhoto = photo.replace("uploads/", "");
 
   return (
