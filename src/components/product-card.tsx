@@ -18,13 +18,11 @@ const ProductCard = ({
   stock,
   handler,
 }: ProductsProps) => {
-  // Remove "uploads/" from photo string
-    console.log("Original photo:", photo); 
-  const modifiedPhoto = photo.replace("uploads/", "");
+ 
 
   return (
     <div className="product-card">
-      <img src={`https://raw.githubusercontent.com/nawazahd/ShopZone-app/master/src/assets/${modifiedPhoto}`} alt={name} />
+      <img src={`https://raw.githubusercontent.com/nawazahd/ShopZone-app/master/src/assets/${photo}`} alt={name} />
       <p>{name}</p>
       <span>₹{price}</span>
 
