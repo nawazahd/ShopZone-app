@@ -1,7 +1,7 @@
 import { FaPlus } from "react-icons/fa";
 import { CartItem } from "../types/types";
 // import svgimg1 from "../../frontend/src/uploads/0f0898a0-bcc2-485b-8820-87c6e203d3ec.svg";
-import { server } from "../redux/store";
+//import { server } from "../redux/store";
 
 type ProductsProps = {
   productId: string;
