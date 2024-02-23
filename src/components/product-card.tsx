@@ -35,10 +35,11 @@ const ProductCard = ({
       imgSrc = "https://img.hotimg.com/0c0187e5-a39c-41b2-beb8-296bffb6b022.jpeg";
       break;
     case "uploads/0c0187e5-a39c-41b2-beb8-296bffb6b022.jpg":
-      imgSrc = "https://img.hotimg.com/0c0187e5-a39c-41b2-beb8-296bffb6b022.jpeg"
+      imgSrc = "https://img.hotimg.com/0c0187e5-a39c-41b2-beb8-296bffb6b022.jpeg";
+      break;
     // Add more cases for additional images if needed
     default:
-      imgSrc = "https://ibb.co/C13dX5T"; // Default image in case none of the conditions match
+      imgSrc = "https://img.hotimg.com/0c0187e5-a39c-41b2-beb8-296bffb6b022.jpeg"; // Default image in case none of the conditions match
       break;
   }
   return (
