@@ -20,8 +20,9 @@ const ProductCard = ({
   stock,
   handler,
 }: ProductsProps) => {
-//D:\shopzone - Copy\frontend\src\assets\uploads\0f0898a0-bcc2-485b-8820-87c6e203d3ec.jpg
-//D:\shopzone - Copy\frontend\src\assets\cover.jpg
+ 
+
+
   return (
     <div className="product-card">
       <img src={`/src/assets/${photo}`} alt={name} />
