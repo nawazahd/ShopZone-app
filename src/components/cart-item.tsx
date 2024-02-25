@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaTrash } from "react-icons/fa";
-//import { server } from "../redux/store";
+import { photoMap } from "../components/PhotoCases"; // Importing photoMap
 import { CartItem } from "../types/types";
 
 type CartItemProps = {
@@ -10,18 +10,18 @@ type CartItemProps = {
   removeHandler: (id: string) => void;
 };
 
-const CartItem = ({
+const CartItemComponent = ({
   cartItem,
   incrementHandler,
   decrementHandler,
   removeHandler,
 }: CartItemProps) => {
-  const { photo, productId, name, price, quantity } = cartItem;
+  const { productId, name, price, quantity } = cartItem;
+  const photoURL = photoMap[cartItem.photo]; // Retrieving photo URL from photoMap
 
   return (
     <div className="cart-item">
-      {/* <img src={`${server}/${photo}`} alt={name} /> */}
-      <img src={`https://raw.githubusercontent.com/nawazahd/ShopZone-app/master/src/assets/${photo}`} alt={name} />
+      <img src={photoURL} alt={name} /> {/* Using photoURL instead of photo */}
       <article>
         <Link to={`/product/${productId}`}>{name}</Link>
         <span>₹{price}</span>
@@ -40,4 +40,4 @@ const CartItem = ({
   );
 };
 
-export default CartItem;
+export default CartItemComponent;
